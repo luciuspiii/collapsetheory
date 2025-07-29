@@ -10,23 +10,4 @@
 | `utils.jl`          | Any date formatting, numeric normalization, or logging helpers.                 |
 
 
-CollapseSystem/
-├── Project.toml
-├── Manifest.toml
-├── src/
-│   ├── CollapseSystem.jl           # Main module entry point
-│   ├── scoring.jl                  # Ψ-score computation logic
-│   ├── data_fetch.jl               # External API calls (e.g. Kamino, Drift)
-│   ├── dashboard.jl                # Terminal display & summary printing
-│   ├── storage.jl                  # Historical storage (score, borrow)
-│   ├── plotting.jl                 # All plotting utilities (Plots.jl)
-│   ├── live_loop.jl                # Live update scheduler / main loop
-│   └── utils.jl                    # Helper functions, formatting, status logic
-├── test_run.jl                     # Dev script for testing full run
-├── run_loop.jl                     # Production execution loop (uses `include(...)`)
-├── data/
-│   ├── psi_history.json            # Saved Ψ-score time series
-│   ├── borrow_history.json         # Borrow rate time series
-│   └── config.json                 # Asset list, alert thresholds, etc.
-└── plots/
-    └── BONK_plot.png              # Saved plots
+
